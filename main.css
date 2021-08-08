@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+body{
+    background: #181818;
+}
+/* start nav  */
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin: 26px auto 0;
+}
+nav ul{
+        display: flex;
+        justify-content: space-between;
+        width: 388px; 
+        height: fit-content;
+        height: -moz-fit-contect;   
+        margin-top: 24px;
+        list-style: none    ;
+}
+nav a{
+    text-decoration: none;
+}
+nav button{
+    width: 139px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    font-weight: bold;
+}
+@media(min-width:300px) and (max-width:800px){
+    nav{
+        width: 90%;
+    }
+    nav ul{
+        display: none;
+    }
+    nav img:nth-child(1){
+        width: 150px;
+    }
+    nav button{
+        width: 114px;
+    }
+}
+@media(min-width:1200px){
+    nav{
+        width: 1000px;
+    }
+    nav img:nth-child(1){
+        width: 202px;
+    }
+    nav img:nth-last-child(1){
+        display: none;
+    }
+}
+/* end nav  */
+/* start section1  */
+section{
+    margin: 92px 0 0 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section1 h1{
+    font-size: 56px;
+    width: 529px;
+    line-height: 59px;
+    letter-spacing: 3.2px;
+}
+.section1 p{
+    margin-top: 68px;
+    font-size: 19px;
+    width: 712px;
+    line-height: 23px;
+    letter-spacing: 2.2px;
+}
+section button{
+    width: 139px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+.section1 div{
+    width: 373px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 72px;
+}
+.section1 div button:nth-child(1){
+    background-color: #4452FE;
+    border-color: #4452FE;
+}
+.section1 img:nth-last-child(1){
+    width: 100%;
+    margin-top: 50px;
+}
+@media(min-width:300px) and (max-width:1000px){
+    .section1 h1{
+        width: 252px;
+        font-size: 39px;
+    }
+    .section1 p{
+        font-size: 14px;
+        width: 336px;
+    }
+    .section1 div{
+        flex-direction: column;
+        align-items: center;
+        height: 149px;
+    }
+}
+/* end section1  */
+/* start section2  */
+
+.section2 h2{
+    font-size: 50px;
+    line-height: 71px;
+    letter-spacing: 10px;
+}
+.section2 p{
+    margin-top: 68px;
+    font-size: 19px;
+    line-height: 23px;
+    letter-spacing: 2.2px;
+    width: 653px;
+}
+.section2 > div:nth-last-child(1){
+    display: flex;
+    margin-top: 139px;
+}
+.imgs > img:nth-child(1){
+    transform: translate(-48px, 0)
+}
+.imgs > img:nth-last-child(1){
+    position: absolute;
+    transform: translate(-437px, 422px);
+}
+.listed-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+.listed-items div{
+    text-align: left;
+    margin-left: 59px;
+    margin-top: 40px;
+}
+.listed-items img{
+    position:absolute;
+    transform: translate(-55px, -16px);
+}
+.listed-items h3{
+    width: 137px;
+}
+.listed-items p {
+    width: 343px;
+}
+@media (min-width:300px) and (max-width:800px){
+    .section2 h2{
+        font-size: 39px;
+        letter-spacing: 6px;
+    }
+    .section2 p{
+        letter-spacing: 1.2px;
+        width: 292px;
+        font-size: 12px;
+    }
+    .section2 > div:nth-last-child(1){
+        flex-direction: column;
+    }
+    .imgs > img:nth-child(1){
+        transform: translate(0, 0);
+        width: 357px;
+    }
+    .imgs > img:nth-last-child(1){
+        transform: translate(-299px, 199px);
+        z-index: 2;
+        width: 255px;
+    }
+    .listed-items div{
+        margin-top: 54px;
+        text-align: left;
+    }
+    .listed-items p{
+        width: 207px;
+        margin-top: 23px;
+    }
+    .listed-items h3{
+        margin-left: 31px;
+    }
+    .listed-items img{
+        transform: translate(-19px, -14px);
+    }
+}
+/* end section2  */
