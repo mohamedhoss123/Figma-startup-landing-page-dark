@@ -128,7 +128,6 @@ section button{
         font-size: 39px;
         font-weight: 100;
         letter-spacing: 0.2px;
-        width: 454px
     }
     p{
         letter-spacing: 1.2px;
@@ -275,17 +274,24 @@ section button{
 .grid-display{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
+    width: 1200px;
 }
 
 .section4 img:nth-child(4){
     border-radius: 9px;
 }
+.section4 img:nth-child(6){
+    transform: translate(151px, 0);
+}
+.section4 img:nth-child(7){
+    transform: translate(141px, 0);
+}
 @media (min-width:300px) and (max-width:1199px){
     .grid-display{
         display: none;
     }
-    .section4 > p{
-        width: 276px;
+    .flex-display{
+        display: flex;
     }
 
 }
