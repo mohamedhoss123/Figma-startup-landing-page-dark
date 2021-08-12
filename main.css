@@ -276,7 +276,9 @@ section button{
     grid-template-columns: 25% 25% 25% 25%;
     width: 1200px;
 }
-
+.section4 P{
+    width: 278px;
+}
 .section4 img:nth-child(4){
     border-radius: 9px;
 }
@@ -292,6 +294,8 @@ section button{
     }
     .flex-display{
         display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
 }
