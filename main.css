@@ -90,7 +90,7 @@ section > p{
 }
 /* start section1  */
 section{
-    margin: 208px  0 0 0;
+    margin: 208px auto 0;
     text-align: center;
     display: flex;
     flex-direction: column;
