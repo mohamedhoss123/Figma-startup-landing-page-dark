@@ -10,9 +10,6 @@
 body{
     background: #181818;
 }
-.center-items{
-
-}
 /* start nav  */
 nav{
     display: flex;
@@ -317,4 +314,73 @@ section button{
         display: none;
     }
 }
-/* end section 4  */
+/* end section  4  */
+/* start section 5  */
+.icon-countaner{
+    display: flex;
+    justify-content:space-between;
+    width: 800px;
+    margin-top: 80px;
+}
+.section5 button{
+    width: 164px;
+    margin-top: 80px;
+}
+@media (min-width:300px) and (max-width:1199px){
+    .section5 p{
+        width: 350px;
+    }
+    .icon-countaner{
+        display: grid;
+        width: 300px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 45px;
+        grid-row-gap: 18px; 
+    }
+    .section5 img:nth-last-child(1){
+        width: 106px;
+    }
+}
+/* end section 5  */
+/* start section 6  */ 
+.section6 > div {
+    margin-top: 72px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 51px;
+}
+.section6 > div > div{
+    width: fit-content;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 38px;
+    width: -moz-fit-content;
+}
+.section6 p{
+    width: 414px;
+    font-size: 16px;
+    margin-top: 50px;
+}
+.name-and-waz{
+    margin-left: 25px;
+}
+.section6 > div > div > div{
+    display: flex;
+}
+@media (min-width:300px) and (max-width:1199px){
+    .section6 > div {
+        margin-top: 72px;
+        display: flex;
+        flex-direction: column;
+    }
+    .section6 > div > div {
+        width: 300px;
+    }
+    .section6 p {
+        width: 213px;
+        font-size: 11px;
+        margin-top: 50px;
+    }
+}
+/* end section 6  */
