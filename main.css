@@ -36,7 +36,7 @@ nav button{
     border: 1px solid #ffffff;
     font-weight: bold;
 }
-@media(min-width:300px) and (max-width:800px){ 
+@media(min-width:300px) and (max-width:1199px){ 
     nav{
         width: 90%;
     }
@@ -49,10 +49,14 @@ nav button{
         width: 150px;
     }
     nav button{
-        width: 114px;
+        width: 108px;
+        height: 39px;
+        transform: translate(13px, 5px);
+        font-weight: 400;
     }
     nav > img:nth-last-child(1){
         width: 48px;
+        transform: translate(13px, 0);
     }
     .display-none{
         display: none;
@@ -123,7 +127,7 @@ section button{
     width: 100%;
     margin-top: 50px;
 }
-@media(min-width:300px) and (max-width:1000px){
+@media(min-width:300px) and (max-width:1199px){
     h2{
         font-size: 39px;
         font-weight: 100;
@@ -138,7 +142,7 @@ section button{
         width: 269px;
     }
     .section1 p{
-        width: 331px;
+        width: 283px;
     }
     .section1 div{
         flex-direction: column;
@@ -182,7 +186,7 @@ section button{
     width: 343px;
     font-weight: 200;
 }
-@media (min-width:300px) and (max-width:800px){
+@media (min-width:300px) and (max-width:1199px){
     .section2 h2{
         font-size: 39px;
         letter-spacing: 6px;
@@ -245,7 +249,7 @@ section button{
     color: black;
     letter-spacing: 1.2px;
 }
-@media(min-width:300px) and (max-width:800px){
+@media(min-width:300px) and (max-width:1199px){
     .section3 p{
         width: 221px;
     }
@@ -339,6 +343,7 @@ section button{
     }
     .section5 img:nth-last-child(1){
         width: 106px;
+        transform: translate(-15px, 10px);
     }
 }
 /* end section 5  */
@@ -384,3 +389,152 @@ section button{
     }
 }
 /* end section 6  */
+/* start section 7  */ 
+.section7 > div{
+    display: flex;
+    background-color: #343434;
+    width: 1200px;
+    margin: 0 auto;
+    border-radius: 33px;
+}
+.section7 > div > div{
+    
+    width: 500px;
+    margin-top: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 240px;
+}
+.section7 button {
+    margin-top: 33px;
+    width: 195px;
+    background: #4452FE;
+    font-size: 15px;
+    border-color: transparent;
+}
+.section7 p {
+    margin-top: 43px;
+    font-size: 40px;
+    line-height: 49px;
+    font-weight: 500;
+    width: 484px;
+}
+.img1{
+    border-bottom-right-radius: 33px; 
+    margin-left: 115px;
+}
+@media (min-width:1200px){
+    .img2{
+        display: none;
+    }
+    .section7 p{
+        margin-left: 120px;
+    }
+    
+}
+
+@media (min-width:300px) and (max-width:1199px){
+    .section7 > div{
+        width: 100%;
+        border-radius: 0;
+        justify-content: space-around;
+        flex-direction: column;
+        background-color: #1E1E1E;
+        height: 802px;
+        
+    }
+    .section7 p{
+        width: 306px;
+        line-height: 50px;
+    }
+    .section7 > div > div{
+        width: 100%;
+        margin-top: 31px;
+        height: fit-content;
+        height: -moz-fit-content; 
+    }
+    .img1{
+        display: none;
+    }
+    .img2{
+        margin-top: 50px;
+    }
+}
+/* end section 7  */
+/* start footer  */
+footer {
+    margin: 208px auto 132px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer > div{
+    width: 1200px;
+    display: flex;
+    justify-content: space-around;
+}
+.dl{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+.dl a{
+    text-decoration: none;
+}
+dt{
+    font-size: 20px;
+    margin-bottom: 34px;
+}
+dd{
+    margin-bottom: 14px;
+}
+.num-plc{
+    display: grid;
+    grid-template-columns: 39px 389px;
+    grid-row-gap: 21px;    
+}
+.num-plc p{
+    transform: translate(10px, 10px);
+    width: 401px;
+}
+.sm{
+    display: flex;
+    justify-content: space-between;
+    width: 13em;
+    margin-top: 31px;
+}
+
+@media (min-width:300px) and (max-width:1199px){
+    footer > div{
+        flex-direction: column;
+        width: 300px;
+    }
+    dl{
+        margin-left: 40px;
+    }
+    .dl {
+        flex-direction: column;
+        width: 300px;
+        height: 924px;
+    }
+    .dl dt{
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+    .dl dd{
+        margin-bottom: 22px;
+    }
+    .comun{
+        margin-top: 51px;
+    }
+    .num-plc p{
+        width: 280px;
+    }
+    .sm {
+        margin: 31px auto 0;
+    }
+}
+/* end footer  */
